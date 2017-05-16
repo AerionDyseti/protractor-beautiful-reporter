@@ -136,16 +136,16 @@ function jasmine2MetaDataBuilder(spec, descriptions, results, capabilities) {
  *                                                   for failed tests? 
  *                                                   Optional (default: false)
  * 
- *     (String) docTitle - document title for the html report generated. 
+ *     (String) docTitle - Title for the html report generated. 
  *                         Optional (default: 'Generated test report').
  * 
- *     (String) docName - document name for the html report generated.
+ *     (String) docName - Document file name for the html report generated.
  *                        Optional (default: 'report.html').
  * 
- *     (String) cssOverrideFile - name of stylesheet title to use, if not using the default.
+ *     (String) cssOverrideFile - Name of stylesheet file to use, if not using the default.
  *                                Optional.
  * 
- *     (Boolean) preserveBaseDirectory - Choose to preserve or clear the base directory.
+ *     (Boolean) preserveBaseDirectory - Do you want to preserve the base directory?
  *                                        Optional (default: true).
  * 
  *     (Boolean) gatherBrowserLogs - Do you want to allow for the gathering of Chrome
