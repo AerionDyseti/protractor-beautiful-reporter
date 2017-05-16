@@ -114,17 +114,42 @@ function jasmine2MetaDataBuilder(spec, descriptions, results, capabilities) {
  *     (String) baseDirectory - The path to the directory where screenshots are
  *                              stored. If not existing, it gets created.
  *                              Mandatory.
+ * 
  *     (Function) pathBuilder - A function which returns a path for a screenshot
  *                              to be stored. Optional.
+ * 
  *     (Function) metaDataBuilder - Function which returns an object literal
  *                                  containing meta data to store along with
  *                                  the screenshot. Optional.
+ * 
+ *     (String) screenshotsSubfolder - Name of the subfodler to create for storing
+ *                                     Screenshots. If not existing, it gets created. Optional.
+ * 
+ *     (String) jsonsSubfolder - Name of the subfodler to create for storing Screenshots. 
+ *                               If not existing, it gets created. Optional.
+ * 
  *     (Boolean) takeScreenShotsForSkippedSpecs - Do you want to capture a
  *                                                screenshot for a skipped spec?
  *                                                Optional (default: false).
+ * 
+ *     (Boolean) takeScreenShotsOnlyForFailedSpecs - Do you want to capture screenshots only
+ *                                                   for failed tests? 
+ *                                                   Optional (default: false)
+ * 
+ *     (String) docTitle - document title for the html report generated. 
+ *                         Optional (default: 'Generated test report').
+ * 
+ *     (String) docName - document name for the html report generated.
+ *                        Optional (default: 'report.html').
+ * 
+ *     (String) cssOverrideFile - name of stylesheet title to use, if not using the default.
+ *                                Optional.
+ * 
+ *     (Boolean) preserveBaseDirectory - Choose to preserve or clear the base directory.
+ *                                        Optional (default: true).
+ * 
  *     (Boolean) gatherBrowserLogs - Do you want to allow for the gathering of Chrome
- *                                                Browser Logs?
- *                                                Optional (default: true).
+ *                                   Browser Logs? Optional (default: true).
  */
 function ScreenshotReporter(options) {
     options = options || {};
