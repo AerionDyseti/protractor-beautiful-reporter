@@ -122,6 +122,9 @@ function jasmine2MetaDataBuilder(spec, descriptions, results, capabilities) {
  *     (Boolean) takeScreenShotsForSkippedSpecs - Do you want to capture a
  *                                                screenshot for a skipped spec?
  *                                                Optional (default: false).
+ *     (Boolean) gatherBrowserLogs - Do you want to allow for the gathering of Chrome
+ *                                                Browser Logs?
+ *                                                Optional (default: true).
  */
 function ScreenshotReporter(options) {
     options = options || {};
